@@ -11,27 +11,5 @@
       "src": "/(.*)",
       "dest": "server.js"
     }
-  ],
-  "env": {
-    "PORT": "@PORT",
-    "NODE_ENV": "@NODE_ENV",
-    "CLIENT_URL": "@CLIENT_URL",
-
-    "MONGODB_URI": "@MONGODB_URI",
-
-    "JWT_SECRET": "@JWT_SECRET",
-    "JWT_REFRESH_SECRET": "@JWT_REFRESH_SECRET",
-
-    "EMAIL_HOST": "@EMAIL_HOST",
-    "EMAIL_PORT": "@EMAIL_PORT",
-    "EMAIL_USER": "@EMAIL_USER",
-    "EMAIL_PASS": "@EMAIL_PASS",
-
-    "FRONTEND_URL": "@FRONTEND_URL",
-    "CONFIRM_EMAIL_REDIRECT": "@CONFIRM_EMAIL_REDIRECT",
-    "RESET_PASSWORD_REDIRECT": "@RESET_PASSWORD_REDIRECT",
-
-    "MAX_FILE_SIZE": "@MAX_FILE_SIZE",
-    "UPLOAD_PATH": "@UPLOAD_PATH"
-  }
+  ]
 }
