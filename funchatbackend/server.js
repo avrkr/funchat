@@ -30,7 +30,7 @@ const io = new Server(server, {
   cors: {
     origin: process.env.NODE_ENV === 'production' 
       ? process.env.CLIENT_URL 
-      : 'https://funchatfrontend.vercel.app/', // Vite's default port
+      : 'https://funchatfrontend.vercel.app', // Vite's default port
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
     credentials: true
@@ -46,7 +46,7 @@ const io = new Server(server, {
 app.use(cors({
   origin: process.env.NODE_ENV === 'production'
     ? process.env.CLIENT_URL
-    : ['https://funchatfrontend.vercel.app/', 'https://funchatfrontend.vercel.app/'],
+    : ['https://funchatfrontend.vercel.app', 'https://funchatfrontend.vercel.app'],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
